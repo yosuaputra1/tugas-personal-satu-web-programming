@@ -1,3 +1,4 @@
+$base-color: #047f8f;
 
 body {
     font-family: "Montserrat";
@@ -26,7 +27,7 @@ a {
 }
 
 a:focus, a:hover {
-    color: #0085A1;
+    color: $base-color;
 }
 
 blockquote {
@@ -40,6 +41,10 @@ blockquote {
     margin-top: 60px;
 }
 
+.heading-text{
+    color: white;
+}
+
 .caption {
     font-size: 14px;
     font-style: italic;
@@ -50,26 +55,24 @@ blockquote {
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
 }
-content p {
-    font-style: italic;
-    color:#0c7377;
-}
 
 /* Containers */
 
 .container-fluid{
-    padding: 7% 15%;
+    padding: 4% 2%;
 }
 
 /* Sections */
 
-.colored-section {
-    background-color: #0c7377;
+.blue-section {
+    background-color: $base-color;
     color: #fff;
+    text-align: center;
 }
 
 .white-section {
     background-color: #fff;
+    text-align: center;
 }
 
 /* Navigation Bar */
@@ -141,13 +144,13 @@ content p {
         color: #212529;
     }
     #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
-        color: #0085A1;
+        color: $base-color;
     }
     #mainNav.is-fixed .navbar-nav > li.nav-item > a {
         color: #212529;
     }
     #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
-        color: #0085A1;
+        color: $base-color;
     }
     #mainNav.is-visible {
         /* if the user changes the scrolling direction, we show the header */
@@ -156,7 +159,6 @@ content p {
 }
 
 header.masthead {
-    margin-bottom: 50px;
     background: no-repeat center center;
     background-color: #868e96;
     background-attachment: scroll;
@@ -170,8 +172,8 @@ header.masthead .overlay {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: #212529;
-    opacity: 0.5;
+    background-color: rgba(33, 37, 41, 0.4);
+    opacity: 0.4;
 }
 
 header.masthead .page-heading,
@@ -263,7 +265,7 @@ header.masthead .post-heading .meta a {
 /* Title Section */
 
 #title {
-    background-color: #ff4c68;
+    background-color: $base-color;
     color: #fff;
     text-align: left;
 }
@@ -281,10 +283,31 @@ header.masthead .post-heading .meta a {
     right: 30%;
 }
 
+/* About Us Section */
+#about {
+    position: relative;
+}
+
+.about-heading {
+    text-align: left;
+}
+
+.about-text {
+    font-size: 120%;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.about-img {
+    width: auto;
+    height: 350px;
+}
+
 /* Features Section */
 
 #features {
     position: relative;
+    text-align: center;
 }
 
 .feature-title {
@@ -295,41 +318,40 @@ header.masthead .post-heading .meta a {
     padding: 4.5%;
 }
 
+/* Members Section */
+
+#members {
+    position: relative;
+    text-align: center;
+}
+
+/* Services Section */
+#services {
+    position: relative;
+}
+
+.services-img{
+    width: auto;
+    height: 200px;
+}
+
+/* Points Section */
+
+#points {
+    position: relative;
+}
+
+.icon:hover {
+    color: $base-color;
+}
+
 .icon {
-    color: #ef8172;
+    color: $base-color;
     margin-bottom: 1rem;
 }
 
 .icon:hover {
-    color: #0c7377;
-}
-
-/* Testimonial Section */
-
-#testimonials {
-    background-color: #ef8172;
-}
-
-.testimonial-text {
-    font-size: 3rem;
-    line-height: 1.5;
-}
-
-.testimonial-image {
-    width: 10%;
-    border-radius: 100%;
-    margin: 20px;
-}
-
-
-#press {
-    background-color: #ef8172;
-    padding-bottom: 3%;
-}
-
-.press-logo {
-    width: 15%;
-    margin: 20px 20px 50px;
+    color: $base-color;
 }
 
 /* Pricing Section */
